@@ -14,4 +14,4 @@ attach to the failing container instance and perform additional diagnostics, if 
 -----------|---------|--------------
 | TARGET_HOSTNAME | www.google.com | the hostname used in the DNS query |
 | DNS_SERVER | "" | the DNS server to use for the query, defaults to the default DNS server(s) for the container |
-| SLEEP_ON_FILE | 60 | the number of seconds to sleep on DNS query failure |
+| SLEEP_ON_FAIL | 60 | the number of seconds to sleep on DNS query failure |
