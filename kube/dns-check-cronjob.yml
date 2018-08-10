@@ -5,7 +5,7 @@ metadata:
   namespace: default
   name: dns-check
 spec:
-  schedule: "*/1 * * * *"
+  schedule: "*/5 * * * *"
   concurrencyPolicy: Forbid
   jobTemplate:
     spec:
@@ -16,3 +16,10 @@ spec:
           - name: dns-check
             image: kube-diagnostic-utils
             args: ["/usr/local/bin/check-dns-lookup.sh"]
+            env:
+              - name: "TARGET_HOSTNAME"
+                value: "www.google.com"
+              - name: "DNS_SERVER"
+                value: ""
+              - name: "SLEEP_ON_FAIL"
+                value: 600
