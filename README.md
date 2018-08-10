@@ -1,4 +1,4 @@
-# sysadmin-utils
+# kube-diagnostic-utils
 Image for collecting useful tools for docker and kubernetes diagonstics
 
 

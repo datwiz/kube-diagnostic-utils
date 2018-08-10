@@ -1,5 +1,5 @@
 FROM busybox:1.29
-MAINTAINER chris.ottinger_dot_dpc.vic.gov.au
+MAINTAINER chris.ottinger_at_bigpond.com
 
 RUN adduser -G users -D admin
 
