@@ -14,5 +14,5 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: dns-check
-            image: sysadmin-utils
+            image: kube-diagnostic-utils
             args: ["/usr/local/bin/check-dns-lookup.sh"]
